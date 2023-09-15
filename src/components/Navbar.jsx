@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const navlinks = [
+// Import your page components
+
+const navLinks = [
   {
     title: "Home",
     link: "/",
@@ -46,17 +49,38 @@ const Navbar = () => {
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navlinks.map((link, index) => (
-                <a
+            <ul className="ml-10 flex items-baseline space-x-4">
+              {/* <nav>
+                <ul className="ml-10 flex items-baseline space-x-4">
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/services">Services</Link>
+                  </li>
+                  <li>
+                    <Link to="/quote">Quote</Link>
+                  </li>
+                  <li>
+                    <Link to="/careers">Careers</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </nav> */}
+              {navLinks.map((link, index) => (
+                <li
                   key={index}
                   className="text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  href={link.link}
                 >
-                  {link.title}
-                </a>
+                  <Link to={link.link}>{link.title}</Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
           {/*  hamburger button */}
           <div className="-mr-2 flex md:hidden">
@@ -74,17 +98,16 @@ const Navbar = () => {
       {/* mobile-menu */}
       {open ? (
         <div className="md:hidden">
-          <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navlinks.map((link, index) => (
-              <a
+          <ul className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navLinks.map((link, index) => (
+              <li
                 key={index}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href={link.link}
               >
-                {link.title}
-              </a>
+                <Link to={link.link}>{link.title}</Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ) : null}
     </div>
