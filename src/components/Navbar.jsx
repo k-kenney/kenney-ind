@@ -69,7 +69,7 @@ const Navbar = () => {
               className="inline-flex item-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               <span className="sr-only">Open Main Menu</span>
-              {open === true ? <FaTimes className="w-8 h-8" /> : <FaBars className="w-8 h-8" />}
+              {open === true ? <FaTimes className="w-8 h-8 absolute z-50 top-14 right-0 left-0 m-auto" /> : <FaBars className="w-8 h-8" />}
             </button>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
       {/* mobile-menu */}
       {open ? (
         <div className="md:hidden">
-          <ul className="absolute z-50 w-full text-center bg-blue ox-2 space-y-2 py-5 sm:px-3">
+          <ul className="absolute top-0 z-10 w-full text-center bg-blue h-auto ox-2 space-y-2 pt-36 pb-14 sm:px-3">
             {navLinks.map((link, index) => (
               <li
                 key={index}
