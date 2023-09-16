@@ -9,7 +9,7 @@ export default {
         body: ['Darker Grotesque']
       },
       colors: {
-        red: '#8B2C3D',
+        red: '#DC143C',
         blue: '#2B3452',
         white: '#F5F5F5',
         copyright: '#9FA1A1'

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import kenneyLogo from ".././assets/img/kenneyLogo.svg"
+import kenneyLogo from ".././assets/img/kenneyLogo.svg";
 
 // Import your page components
 
@@ -40,12 +40,12 @@ const Navbar = () => {
     console.log(open);
   };
   return (
-    <div className="bg-gray-800">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <div>
+      <div className="mx-auto p-10 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="text-white">
-              <img src={kenneyLogo} alt="" />
+              <img className="w-40" src={kenneyLogo} alt="Kenney logo" />
             </a>
           </div>
           {/* navlinks */}
@@ -69,7 +69,7 @@ const Navbar = () => {
               className="inline-flex item-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               <span className="sr-only">Open Main Menu</span>
-              {open === true ? <FaTimes /> : <FaBars />}
+              {open === true ? <FaTimes className="w-8 h-8" /> : <FaBars className="w-8 h-8" />}
             </button>
           </div>
         </div>
