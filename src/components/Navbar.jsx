@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import kenneyLogo from ".././assets/img/kenneyLogo.svg"
 
 // Import your page components
 
@@ -44,34 +45,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="text-white">
-              Navbar
+              <img src={kenneyLogo} alt="" />
             </a>
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
             <ul className="ml-10 flex items-baseline space-x-4">
-              {/* <nav>
-                <ul className="ml-10 flex items-baseline space-x-4">
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/services">Services</Link>
-                  </li>
-                  <li>
-                    <Link to="/quote">Quote</Link>
-                  </li>
-                  <li>
-                    <Link to="/careers">Careers</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
-                </ul>
-              </nav> */}
               {navLinks.map((link, index) => (
                 <li
                   key={index}
