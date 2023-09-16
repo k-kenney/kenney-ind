@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.homepage-btn {
+    @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-base
+}

@@ -7,7 +7,6 @@ import Services from "./pages/Services/Services";
 import Quote from './pages/Quote/Quote';
 import Careers from './pages/Careers/Careers';
 import Contact from './pages/Contact/Contact';
-import Navbar from './components/Navbar';
 
 function App() {
 
@@ -19,7 +18,6 @@ function App() {
   return (
     <div style={appStyle}>
       <Router>
-        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
