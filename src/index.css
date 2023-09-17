@@ -4,6 +4,54 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    color: #F5F5F5;
+}
+
+/* homepage */
 .homepage-btn {
     @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-base
+}
+
+.homepage-card1 {
+    padding: 0;
+    margin: auto;
+    height: 180px;
+    width: 100%;
+    background-image: url(./assets/img/manufacturing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 0.5px #F5F5F5;
+}
+
+.homepage-card2 {
+    padding: 0;
+    margin: auto;
+    height: 180px;
+    width: 100%;
+    background-image: url(./assets/img/machining.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 0.5px #F5F5F5;
+}
+
+.homepage-card3 {
+    padding: 0;
+    margin: auto;
+    height: 180px;
+    width: 100%;
+    background-image: url(./assets/img/welding.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 0.5px #F5F5F5;
+}
+
+.homepage-card4 {
+    padding: 0;
+    margin: auto;
+    height: 180px;
+    width: 100%;
+    background-image: url(./assets/img/quality.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
