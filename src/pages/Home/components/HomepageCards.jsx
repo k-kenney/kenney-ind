@@ -3,9 +3,9 @@ import React from "react";
 const HomepageCards = () => {
   return (
     <div className="grid-cols-1">
-      <div className="homepage-card1">
-        <h2>Manufacturing</h2>
-        <h3>
+      <div className="homepage-card1 homepage-card-text">
+        <h2 className="homepage-card-h2">Manufacturing</h2>
+        <h3 className="homepage-card-h3">
           <span className="text-red">60,000+</span> Square feet under one roof
         </h3>
       </div>
