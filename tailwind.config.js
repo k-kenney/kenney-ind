@@ -17,6 +17,7 @@ export default {
       lineHeight: {
         'extra-loose': '2.5',
         '12': '3.5rem',
+        '15': '4.5rem',
       }
 
   },
