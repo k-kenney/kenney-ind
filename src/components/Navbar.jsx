@@ -50,11 +50,11 @@ const Navbar = () => {
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
-            <ul className="ml-10 flex items-baseline space-x-4">
+            <ul className="ml-10 flex items-baseline lg:space-x-4 md:space-x-1">
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md lg:text-lg md:text-medium"
                 >
                   <Link to={link.link}>{link.title}</Link>
                 </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
       {/* mobile-menu */}
       {open ? (
         <div className="md:hidden">
-          <ul className="absolute top-0 z-10 w-full text-center bg-blue h-auto ox-2 space-y-2 pt-36 pb-14 sm:px-3">
+          <ul className="absolute z-20 top-0 w-full text-center bg-blue h-auto ox-2 space-y-2 pt-36 pb-14 sm:px-3">
             {navLinks.map((link, index) => (
               <li
                 key={index}
