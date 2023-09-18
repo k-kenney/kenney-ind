@@ -7,12 +7,12 @@ import HomepageCards from "./components/HomepageCards";
 const Home = () => {
   return (
     <>
-    <Fade top distance="20%" duration={1500}>
-      <Header />
-      <HomepageAbout />
-      <HomepageButtons />
-      <HomepageCards />
-    </Fade>
+      <Fade top distance="20%" duration={1500}>
+        <Header /> 
+        <HomepageButtons />
+        <HomepageAbout />
+        <HomepageCards />
+      </Fade>
     </>
   );
 };

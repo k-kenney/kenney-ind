@@ -1,7 +1,6 @@
-import React from "react";
 
 const HomepageCards = () => {
-  return (
+  return (   
     <div className="grid-cols-1">
       <div className="homepage-card1 homepage-card-text">
         <h2 className="homepage-card-h2">Manufacturing</h2>

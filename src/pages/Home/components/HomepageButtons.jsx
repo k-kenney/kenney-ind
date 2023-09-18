@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const HomepageButtons = () => {
-  return (
+  return ( 
     <div>
         <div className="h-40 absolute z-50 m-auto top-80 bottom-0 right-0 left-0 flex items-center justify-center mx-auto pt-3 gap-8 md:top-96 lg:pt-5 md:right-1/3">
           <Link to="/about">
