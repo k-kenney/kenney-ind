@@ -65,9 +65,19 @@ body {
 }
 
 .homepage-card-h2 {
-    @apply text-2xl 
+    @apply text-2xl font-semibold pb-1
 }
 
 .homepage-card-h3 {
-    @apply font-special text-xl
+    @apply font-special text-xl pt-2
+}
+
+.homepage-span {
+    @apply text-red font-bold
+}
+
+.triangle-background {
+    background: url(./assets/img/triangle.svg) right;
+    background-repeat: no-repeat;
+
 }
