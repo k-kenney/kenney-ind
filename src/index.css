@@ -65,11 +65,11 @@ body {
 }
 
 .homepage-card-h2 {
-    @apply text-2xl font-semibold pb-1
+    @apply text-2xl font-semibold pb-1 xl:text-4xl
 }
 
 .homepage-card-h3 {
-    @apply font-special text-xl pt-2
+    @apply font-special text-xl pt-2 xl:text-3xl
 }
 
 .homepage-span {

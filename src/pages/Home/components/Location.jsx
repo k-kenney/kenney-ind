@@ -19,12 +19,12 @@ function GoogleMap() {
 
   return (
     <>
-        <div className='py-20 md:flex md:w-2/3 md:justify-between md:items-center m-auto'>
+        <div className='pt-20 pb-40 md:flex md:w-2/3 md:justify-between md:items-center m-auto'>
             <div className='flex flex-col justify-center items-center pb-14'>
                 <h1 className='homepage-card-h2'>Location</h1>
                 <p className='homepage-card-h3'>2110 Panoramic Circle <br/> Dallas, Texas 75212</p>
             </div>
-            <div id="map" className="w-full h-96 md:w-2/3">
+            <div id="map" className="w-full h-96 md:w-2/3 md:rounded-lg">
             {/* Map container */}
             </div>
         </div>

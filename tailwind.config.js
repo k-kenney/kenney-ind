@@ -19,6 +19,9 @@ export default {
           'extra-loose': '2.5',
           '12': '3.5rem',
           '15': '4.5rem',
+        },
+        borderWidth: {
+          '1': '0.5px'
         }
     },
   },
