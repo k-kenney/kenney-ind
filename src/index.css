@@ -75,9 +75,3 @@ body {
 .homepage-span {
     @apply text-red font-bold
 }
-
-.triangle-background {
-    background: url(./assets/img/triangle.svg) right;
-    background-repeat: no-repeat;
-
-}
