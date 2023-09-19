@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import HomepageAbout from "./components/HomepageAbout";
 import HomepageButtons from "./components/HomepageButtons";
 import HomepageCards from "./components/HomepageCards";
+import Location from "./components/Location";
+import MapWithPin from "./components/Location";
+import GoogleMap from "./components/Location";
 
 const Home = () => {
   return (
@@ -12,6 +15,7 @@ const Home = () => {
         <HomepageButtons />
         <HomepageAbout />
         <HomepageCards />
+        <GoogleMap />
       </Fade>
     </>
   );
