@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerAngle from "../assets/img/footerAngle.png";
+import footerAngle from "../assets/img/footerAngle.svg";
 import Copyright from "./Copyright";
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="relative z-0">
-        <img src={footerAngle} alt="red angle" className="w-full h-80" />
+        <img src={footerAngle} alt="red angle" className="w-screen h-96 object-cover" />
       </div>
       <Copyright />
     </div>
