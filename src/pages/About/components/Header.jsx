@@ -1,11 +1,10 @@
-import { Fade } from "react-awesome-reveal";
+
 import triangle from "../../../assets/img/triangle.png";
 import Navbar from "../../../components/Navbar";
 
 const Header = () => {
   return (
-    <Fade>
-      <div className="w-full pb-12">
+      <div className="w-full">
         <div className="relative z-0 bg-right float-right bg-no-repeat m-auto w-1/2 md:w-1/3">
           <img src={triangle} alt="red triangle" className="w-screen h-screen" />
         </div>
@@ -16,7 +15,6 @@ const Header = () => {
           Something awesome coming soon
         </h1>
       </div>
-    </Fade>
   );
 };
 
