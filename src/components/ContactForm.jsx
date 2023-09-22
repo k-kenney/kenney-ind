@@ -26,7 +26,7 @@ const ContactForm = () => {
 
           </label>
         </div>
-        <button type="submit">Submit the Results</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
