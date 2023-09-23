@@ -6,7 +6,7 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Quote from './pages/Quote/Quote';
 import Careers from './pages/Careers/Careers';
-import Contact from './pages/Contact/Contact';
+import Contact from './pages/Contact';
 
 function App() {
 
