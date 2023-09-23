@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   // const [isSubmitted, setIsSubmitted] = useState(false);
-  // const navigate = useNavigate();
+ 
 
   // const handleSubmit = event => {
   //   event.preventDefault();
@@ -18,11 +18,11 @@ const ContactForm = () => {
   return (
     <div>
         <form
-          // onSubmit={handleSubmit}
+          onSubmit="submit"
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
-          // action="/"
+          action="/success"
         >
           <input type="hidden" name="form-name" value="contact" />
 
