@@ -7,6 +7,7 @@ import Services from "./pages/Services/Services";
 import Quote from './pages/Quote/Quote';
 import Careers from './pages/Careers/Careers';
 import Contact from './pages/Contact';
+import SuccessMessage from './components/SuccessMessage';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/quote" element={<Quote />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/success" element={<SuccessMessage />} />
         </Routes>
       </Router>
     </div>
