@@ -1,25 +1,38 @@
 import React, { useState } from "react";
-// import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  // const [isSubmitted, setIsSubmitted] = useState(false);
-//  const navigate = Navigate()
 
-//   const handleSubmit = event => {
-//     event.preventDefault();
-  
-//     // 👇️ redirect
-//     navigate('/', {replace: true});
-//   };
+  const navigate = useNavigate()
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      // Submit the form to Netlify
+      await fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({ 'form-name': 'contact', name, message }).toString(),
+      });
+      // After a successful submission, navigate to the success page
+      navigate('/success');
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
+  };
+
   
 
   return (
     <div>
         <form
-          onSubmit="submit"
+          onSubmit={handleSubmit}
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
