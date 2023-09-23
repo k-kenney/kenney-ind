@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   // const [isSubmitted, setIsSubmitted] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleSubmit = event => {
-    event.preventDefault();
+  // const handleSubmit = event => {
+  //   event.preventDefault();
   
-    // 👇️ redirect
-    navigate('/', {replace: true});
-  };
+  //   // 👇️ redirect
+  //   navigate('/', {replace: true});
+  // };
 
   return (
     <div>
         <form
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
-          // action="/#/success"
+          // action="/success"
         >
           <input type="hidden" name="form-name" value="contact" />
 
