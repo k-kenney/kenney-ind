@@ -1,18 +1,19 @@
 import React, { useState } from "react";
+// import { Navigate } from "react-router-dom";
 
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   // const [isSubmitted, setIsSubmitted] = useState(false);
- 
+//  const navigate = Navigate()
 
-  // const handleSubmit = event => {
-  //   event.preventDefault();
+//   const handleSubmit = event => {
+//     event.preventDefault();
   
-  //   // 👇️ redirect
-  //   navigate('/', {replace: true});
-  // };
+//     // 👇️ redirect
+//     navigate('/', {replace: true});
+//   };
   
 
   return (
