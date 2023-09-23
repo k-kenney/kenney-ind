@@ -1,39 +1,38 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const ContactForm = () => {
-  return (
-    <div>
-      <form
-        name="contact v1"
-        method="post"
-        data-netlify="true"
-        onSubmit="submit"
-      >
-        {/* <input type="hidden" name="form-name" value="contact v1" /> */}
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-        <div>
-          <label>First Name<br />
-            <input type="text" name="first-name" />
-          </label>
-        </div>
-        <div>
-          <label>Last Name <br />
-            <input type="text" name="last-name" />
-          </label>
-        </div>
-        <div>
-          <label htmlFor="email">Email</label> <br />
-          <input id="email" type="email" />
-        </div>
-        <div>
-          <label>
-            Any Comments? <br />
-            <textarea name="comments"></textarea>
-          </label>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here (Netlify will take care of this)
+  };
+
+  return (
+    <form onSubmit={handleSubmit} netlify>
+      <label>
+        Name:
+        <input type="text" name="name" value={formData.name} onChange={handleChange} />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+      </label>
+      <label>
+        Message:
+        <textarea name="message" value={formData.message} onChange={handleChange} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
   );
 };
 
