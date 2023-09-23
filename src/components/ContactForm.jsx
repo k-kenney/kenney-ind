@@ -12,18 +12,23 @@ const ContactForm = () => {
         <input type="hidden" name="form-name" value="contact v1" />
 
         <div>
-            <label>First className <br />
-                <input type="text" name="first-name" />
-            </label>
+          <label>First Name<br />
+            <input type="text" name="first-name" />
+          </label>
         </div>
         <div>
-            <label htmlFor="email">Email</label> <br />
-            <input id="email" type="email" />
+          <label>Last Name <br />
+            <input type="text" name="last-name" />
+          </label>
         </div>
         <div>
-          <label>Any Comments? <br />
-          <textarea name="comments"></textarea>
-
+          <label htmlFor="email">Email</label> <br />
+          <input id="email" type="email" />
+        </div>
+        <div>
+          <label>
+            Any Comments? <br />
+            <textarea name="comments"></textarea>
           </label>
         </div>
         <button type="submit">Submit</button>
