@@ -12,7 +12,7 @@ const ContactForm = () => {
     // Submit your form data (e.g., using Axios, fetch, etc.)
 
     // Redirect to the success page
-    navigate("/success");
+    navigate("/success", {replace: true});
   };
   return (
     <div>
