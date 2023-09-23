@@ -7,13 +7,13 @@ const ContactForm = () => {
   // const [isSubmitted, setIsSubmitted] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // Submit your form data (e.g., using Axios, fetch, etc.)
-
-    // Redirect to the success page
-    navigate("/success", {replace: true});
+  const handleSubmit = event => {
+    event.preventDefault();
+  
+    // 👇️ redirect
+    navigate('/', {replace: true});
   };
+
   return (
     <div>
         <form
@@ -21,7 +21,7 @@ const ContactForm = () => {
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
-          action="/#/success"
+          // action="/#/success"
         >
           <input type="hidden" name="form-name" value="contact" />
 
