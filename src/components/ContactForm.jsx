@@ -3,8 +3,11 @@ import { useNavigate } from "react-router";
 
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("")
+  const [name, setName] = useState("")
+  const [number, setNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
 
   const navigate = useNavigate()
 
@@ -18,7 +21,7 @@ const ContactForm = () => {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: new URLSearchParams({ 'form-name': 'contact', name, message }).toString(),
+        body: new URLSearchParams({ 'form-name': 'contact', company, name, number, email, message }).toString(),
       });
       // After a successful submission, navigate to the success page
       navigate('/success');
@@ -30,7 +33,7 @@ const ContactForm = () => {
   
 
   return (
-    <div>
+    <div className="flex flex-column justify-center m-auto items-center">
         <form
           onSubmit={handleSubmit}
           name="contact"
@@ -45,7 +48,18 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="company">Company</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company Name"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="name">Full Name</label>
             <input
               type="text"
               id="name"
@@ -53,6 +67,28 @@ const ContactForm = () => {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="number">Phone Number</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Your Number"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div>
