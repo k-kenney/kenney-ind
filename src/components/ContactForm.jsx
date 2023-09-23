@@ -11,8 +11,6 @@ const ContactForm = () => {
     e.preventDefault();
     // Submit your form data (e.g., using Axios, fetch, etc.)
 
-    // If submission is successful:
-    // setIsSubmitted(true);
     // Redirect to the success page
     navigate("/success");
   };
@@ -23,6 +21,7 @@ const ContactForm = () => {
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
+          action="/#/success"
         >
           <input type="hidden" name="form-name" value="contact" />
 
