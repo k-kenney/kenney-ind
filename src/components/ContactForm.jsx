@@ -7,8 +7,13 @@ const ContactForm = () => {
   console.log(name, message);
   return (
     <div>
-      <form name="contact" method="POST" >
+      <form name="contact" method="POST" data-netlify-honeypot="bot-field" >
         <input type="hidden" name="form-name" value="contact"/>
+
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+        
         <div>
           <label htmlFor="name">Name</label>
           <input
