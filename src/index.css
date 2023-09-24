@@ -13,9 +13,7 @@ body {
 }
 
 /* homepage */
-.homepage-btn {
-    @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-lg font-special lg:py-3 lg:px-4 lg:text-2xl z-50
-}
+
 
 .homepage-card1 {
     padding: 0;
@@ -59,6 +57,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.homepage-btn {
+    @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-lg font-special lg:py-3 lg:px-4 lg:text-2xl z-50
+}
 
 .homepage-card-text {
     @apply flex flex-col justify-center items-center
@@ -74,4 +75,12 @@ body {
 
 .homepage-span {
     @apply text-red font-bold
+}
+
+.contact-text {
+    @apply text-xl pb-1 font-special pt-4
+}
+
+.contact-input {
+    @apply w-72 bg-copyright bg-opacity-20 border-2 border-copyright rounded py-1 px-2
 }

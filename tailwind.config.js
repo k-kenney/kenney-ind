@@ -13,7 +13,8 @@ export default {
           red: '#DC143C',
           blue: '#2B3452',
           white: '#F5F5F5',
-          copyright: '#9FA1A1'
+          copyright: '#9FA1A1',
+          black: '#323232'
         },
         lineHeight: {
           'extra-loose': '2.5',
