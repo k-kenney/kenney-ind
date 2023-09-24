@@ -8,7 +8,7 @@ const SuccessMessage = () => {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       navigate('/'); // Redirect to the homepage
-    }, 3000); // 3000 milliseconds (3 seconds)
+    }, 10000); // 3000 milliseconds (3 seconds)
 
     // Cleanup the timeout in case the component unmounts before redirection
     return () => {
@@ -17,8 +17,8 @@ const SuccessMessage = () => {
   }, [navigate]);
 
   return (
-    <div>
-      <p>Message successfully sent</p>
+    <div className='text-center pt-40'>
+      <p className='text-3xl'>Message successfully sent!</p>
       {/* You can add any additional content or styling here */}
     </div>
   );

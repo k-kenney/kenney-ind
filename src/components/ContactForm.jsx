@@ -45,7 +45,7 @@ const ContactForm = () => {
         setRows(5);
       } else {
         // Medium screens and larger
-        setRows(10);
+        setRows(8);
       }
     };
 
