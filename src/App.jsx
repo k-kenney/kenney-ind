@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenets
-import Home from "./pages/Home";
+import Home from "./pages/Home/Index";
 import About from './pages/About/Index';
 import Services from "./pages/Services";
 import Quote from './pages/Quote';
