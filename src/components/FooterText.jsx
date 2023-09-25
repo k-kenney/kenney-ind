@@ -32,6 +32,7 @@ const FooterText = () => {
             <p className="pb-10">t: (972) 000-0000</p>
           </div>
         </div>
+
       </div>
   )
 }

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import footerAngle from "../assets/img/footerAngle.svg";
-import Copyright from "./Copyright";
+// import Copyright from "./Copyright";
 
 const Footer = () => {
   return (
     <div>
-      <div className="w-full pb-4 pt-12">
+      <div className="w-full pt-12 pb-12">
         <div className="flex items-center justify-between w-3/4 m-auto absolute z-20 right-0 left-0">
           <div className="leading-12 font-bold text-xl">
             <Link to="/about">
@@ -36,9 +36,18 @@ const Footer = () => {
         </div>
       </div>
       <div className="relative z-0">
-        <img src={footerAngle} alt="red angle" className="w-screen h-96 object-cover" />
+        <img
+          src={footerAngle}
+          alt="red angle"
+          className="w-screen h-80 object-cover"
+        />
       </div>
-      <Copyright />
+      <div className="w-full bg-red">
+        <p className="text-copyright text-center m-auto pb-8 font-special text-sm lg:text-lg tracking-wider">
+          Copyright &copy; 2023 KenneyIND. All rights reserved.{" "}
+        </p>
+      </div>
+      {/* <Copyright /> */}
     </div>
   );
 };
