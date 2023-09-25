@@ -65,7 +65,7 @@ const ContactForm = () => {
     <>
         <div className="contact-image">
           <div className="">
-            <h1 className="text-center text-3xl xl:text-4xl m-0 pt-14">
+            <h1 className="text-center text-3xl xl:text-4xl m-0 pt-14 xl:pt-16">
               Contact Us
             </h1>
             <form
@@ -81,7 +81,7 @@ const ContactForm = () => {
               <div hidden>
                 <input name="bot-field" />
               </div>
-              <div className="md:flex md:justify-center md:m-0 md:items-center md:gap-20 md:pt-8 lg:gap-32 xl:gap-40">
+              <div className="md:flex md:justify-center md:m-0 md:items-center md:gap-20 md:pt-8 lg:gap-32 xl:gap-40 xl:pt-12">
                 <div className="">
                   <div className="">
                     <div className="contact-text">
