@@ -2,12 +2,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenets
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from './pages/About/Index';
 import Services from "./pages/Services";
 import Quote from './pages/Quote';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import SuccessMessage from './components/SuccessMessage';
+
 
 function App() {
 
