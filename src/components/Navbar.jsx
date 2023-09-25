@@ -41,11 +41,11 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="mx-auto py-14 px-12 lg:px-8 lg:w-5/6">
+      <div className="mx-auto py-14 px-12 lg:px-8 lg-5/6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="text-white">
-              <img className="w-40 md:w-52" src={kenneyLogo} alt="Kenney logo" />
+              <img className="w-40 md:w-52 transition duration-300 ease-in hover:opacity-70" src={kenneyLogo} alt="Kenney logo" />
             </a>
           </div>
           {/* navlinks */}
@@ -66,10 +66,10 @@ const Navbar = () => {
             <button
               type="button"
               onClick={handleMenu}
-              className="inline-flex item-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex item-center justify-center p-2 rounded-md transition duration-300 ease-in text-gray-400 hover:text-white"
             >
               <span className="sr-only">Open Main Menu</span>
-              {open === true ? <FaTimes className="w-8 h-8 absolute z-50 top-14 right-0 left-0 m-auto" /> : <FaBars className="w-8 h-8" />}
+              {open === true ? <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto" /> : <FaBars className="w-9 h-9" />}
             </button>
           </div>
         </div>
