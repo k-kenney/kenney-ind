@@ -69,6 +69,7 @@ const Navbar = () => {
               className="inline-flex item-center justify-center p-2 rounded-md transition duration-300 ease-in text-gray-400 hover:text-white"
             >
               <span className="sr-only">Open Main Menu</span>
+              
               {open === true ? <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto" /> : <FaBars className="w-9 h-9" />}
             </button>
           </div>
