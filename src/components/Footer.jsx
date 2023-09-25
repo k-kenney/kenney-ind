@@ -5,7 +5,7 @@ import Copyright from "./Copyright";
 const Footer = () => {
   return (
     <div>
-      <div className="w-full pb-4">
+      <div className="w-full pb-4 pt-12">
         <div className="flex items-center justify-between w-3/4 m-auto absolute z-20 right-0 left-0">
           <div className="leading-12 font-bold text-xl">
             <Link to="/about">

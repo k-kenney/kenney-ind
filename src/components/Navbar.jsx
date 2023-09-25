@@ -54,7 +54,7 @@ const Navbar = () => {
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md lg:text-lg md:text-medium"
+                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-medium"
                 >
                   <Link to={link.link}>{link.title}</Link>
                 </li>

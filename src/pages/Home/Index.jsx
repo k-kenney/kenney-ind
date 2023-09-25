@@ -4,6 +4,8 @@ import HomepageAbout from "./components/HomepageAbout";
 import HomepageCards from "./components/HomepageCards";
 import GoogleMap from "./components/Location";
 import Footer from "../../components/Footer";
+import ContactForm from "../../components/ContactForm";
+
 
 const Home = () => {
   return (
@@ -13,6 +15,7 @@ const Home = () => {
         <HomepageAbout />
         <HomepageCards />
         <GoogleMap />
+        <ContactForm />
         <Footer />
       </Fade>
     </>
