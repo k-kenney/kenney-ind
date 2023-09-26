@@ -105,3 +105,25 @@ body {
       height: 90vh; /* Set the desired height for medium screens */
     }
   }
+
+/* about page */
+
+/* timeline */
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, .1);
+    background-image: url(./assets/img/welding.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F5F5F5;
+  }
+
+  .vertical-timeline-element-icon{
+    background-color: white;
+    box-shadow: none;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    display: none;
+  }
+
