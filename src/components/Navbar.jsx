@@ -41,11 +41,11 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="mx-auto py-14 px-12 lg:px-8 lg-5/6">
-        <div className="flex items-center justify-between h-16">
+      <div className="mx-auto py-14 px-5 lg:px-8 w-5/6 ">
+        <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-white">
-              <img className="w-40 md:w-52 transition duration-300 ease-in hover:opacity-70" src={kenneyLogo} alt="Kenney logo" />
+            <a href="/" className="">
+              <img className="w-40 md:w-40 lg:w-56 transition duration-300 ease-in hover:opacity-70" src={kenneyLogo} alt="Kenney logo" />
             </a>
           </div>
           {/* navlinks */}
@@ -54,7 +54,7 @@ const Navbar = () => {
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-medium"
+                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-sm"
                 >
                   <Link to={link.link}>{link.title}</Link>
                 </li>
