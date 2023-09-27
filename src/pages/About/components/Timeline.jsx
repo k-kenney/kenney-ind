@@ -7,21 +7,21 @@ import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "./TimelineElements";
 
 const Timeline = () => {
-  
 
   return (
-    <div className="pb-14 w-3/4 m-auto">
+    <div className="py-32 w-3/4 lg:w-5/6 m-auto">
       <h1 className="uppercase text-2xl w-60 text-center m-auto py-12">
-        A brieft history of kenney ind
+        A brief history of kenney ind
       </h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
+          const backgroundClass = `background-image-${element.backgroundImage}`;
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               year={element.year}
               yearClassName="year"
-              className="text-blue" 
+              className={`text-blue ${backgroundClass}`}
             >
               <div className="w-5/6 m-auto">
                 <h3 className="pb-4 pt-3 verticle-timeline-element-title">

@@ -14,9 +14,7 @@ const Header = () => {
       <div className="absolute m-auto top-0 bottom-0 right-0 left-0 z-50">
         <Navbar />
       </div>
-      <h1 className="absolute top-48 sm:text-3xl sm:leading-12 lg:text-4xl lg:leading-15 bottom-0 left-0 right-0 z-20 uppercase text-xl m-auto text-center w-1/2 leading-10 font-bold">
-        Something awesome coming soon
-      </h1>
+    
     </div>
   );
 };

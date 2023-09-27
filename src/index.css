@@ -106,24 +106,52 @@ body {
     }
   }
 
-/* about page */
+/* About page */
+/* About Header */
 
-/* timeline */
+.triangle {
+  background-image: url(./assets/img/triangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 43%;
+}
+
+
+/* About timeline */
   .vertical-timeline-element-content {
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-    background: rgba(0, 0, 0, .1);
-    background-image: url(./assets/img/welding.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #F5F5F5;
-  }
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, .1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F5F5F5;
+}
 
-  .vertical-timeline-element-icon{
-    background-color: white;
-    box-shadow: none;
-  }
+.vertical-timeline-element-icon{
+  background-color: white;
+  box-shadow: none;
+}
 
-  .vertical-timeline-element-content-arrow {
-    display: none;
-  }
+.vertical-timeline-element-content-arrow {
+  display: none;
+}
+
+.background-image-1 .vertical-timeline-element-content {
+  background-image: url(./assets/img/kenney1968.png);
+}
+
+.background-image-2 .vertical-timeline-element-content {
+  background-image: url(./assets/img/kenney1992.png);
+}
+
+.background-image-3 .vertical-timeline-element-content {
+  background-image: url(./assets/img/kenney2001.png);
+}
+
+.background-image-4 .vertical-timeline-element-content {
+  background-image: url(./assets/img/kenney2010.png);
+}
 
