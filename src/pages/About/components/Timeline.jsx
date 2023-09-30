@@ -9,7 +9,7 @@ import timelineElements from "./TimelineElements";
 const Timeline = () => {
 
   return (
-    <div className="py-32 w-3/4 lg:w-5/6 m-auto">
+    <div className="pt-32 pb-32 md:pt-20 w-3/4 lg:w-5/6 m-auto">
       <h1 className="uppercase text-2xl w-60 text-center m-auto py-12">
         A brief history of kenney ind
       </h1>

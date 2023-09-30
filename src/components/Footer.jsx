@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <div className="w-full pt-12 pb-12">
         <div className="flex items-center justify-between w-3/4 m-auto absolute z-20 right-0 left-0">
-          <div className="leading-12 font-bold text-xl">
+          <div className="leading-12 font-bold text-lg">
             <Link to="/about">
               <h3>About</h3>
             </Link>
@@ -22,14 +22,14 @@ const Footer = () => {
             </Link>
           </div>
           <div className="text-end">
-            <h3 className="text-xl font-bold pb-4">Location</h3>
+            <h3 className="text-lg font-bold pb-4">Location</h3>
             <p className="pb-10">
               2110 Panoramic Circle
               <br /> Dallas, Texas 75212
             </p>
-            <h3 className="text-xl font-bold pb-4">Email</h3>
+            <h3 className="text-lg font-bold pb-4">Email</h3>
             <p className="pb-10">sales@kenneyind.com</p>
-            <h3 className="text-xl font-bold pb-4">Call us</h3>
+            <h3 className="text-lg font-bold pb-4">Call us</h3>
             <p>t: (972) 000-0000</p>
             <p className="pb-10">t: (972) 000-0000</p>
           </div>
