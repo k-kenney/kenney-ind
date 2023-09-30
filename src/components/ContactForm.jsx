@@ -126,7 +126,7 @@ const ContactForm = () => {
                     <div>
                       <input
                         className="contact-input"
-                        type="number"
+                        type="tel"
                         id="number"
                         name="number"
                         placeholder="Your Number"

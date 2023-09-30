@@ -3,6 +3,9 @@ import footerAngle from "../assets/img/footerAngle.svg";
 // import Copyright from "./Copyright";
 
 const Footer = () => {
+  const googleMapsLink =
+    "https://www.google.com/maps/place/2110+Panoramic+Cir,+Dallas,+TX+75212,+USA/@32.76964,-96.8641662,17z/data=!4m6!3m5!1s0x864e9bb98639aba7:0xd0094bdbe861fff7!8m2!3d32.7693923!4d-96.8605127!16s%2Fg%2F11c23d4rp9?entry=ttu";
+
   return (
     <div>
       <div className="w-full pt-12 pb-12">
@@ -23,10 +26,12 @@ const Footer = () => {
           </div>
           <div className="text-end">
             <h3 className="text-lg font-bold pb-4">Location</h3>
-            <p className="pb-10">
-              2110 Panoramic Circle
-              <br /> Dallas, Texas 75212
-            </p>
+            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+              <p className="pb-10 underline">
+                2110 Panoramic Circle
+                <br /> Dallas, Texas 75212
+              </p>
+            </a>
             <h3 className="text-lg font-bold pb-4">Email</h3>
             <p className="pb-10">sales@kenneyind.com</p>
             <h3 className="text-lg font-bold pb-4">Call us</h3>
