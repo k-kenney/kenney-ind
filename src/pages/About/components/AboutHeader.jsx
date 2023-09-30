@@ -1,6 +1,6 @@
 const AboutHeader = () => {
   return (
-    <div className="mb-40 sm:mb-1">
+    <div className="mb-32 sm:mb-1">
       <div className="absolute top-52 bottom-0 left-0 right-36 sm:right-64 md:right-0 z-20">
         <h1 className="triangle-header-text">
           About
