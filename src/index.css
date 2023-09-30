@@ -12,6 +12,11 @@ body {
     font-weight: medium;
 }
 
+/* Global */
+.triangle-header-text {
+  @apply sm:leading-12 lg:text-4xl lg:leading-15 uppercase md:text-4xl text-3xl m-auto md:w-56 w-48 lg:w-80 py-4 text-center leading-10 font-bold border-t border-b
+}
+
 /* homepage */
 
 
@@ -152,6 +157,10 @@ body {
 }
 
 .background-image-4 .vertical-timeline-element-content {
+  background-image: url(./assets/img/manufacturing.png);
+}
+
+.background-image-5 .vertical-timeline-element-content {
   background-image: url(./assets/img/kenney2010.png);
 }
 

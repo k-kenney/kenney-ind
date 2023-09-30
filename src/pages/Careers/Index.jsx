@@ -2,6 +2,7 @@ import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
+import CareersHeader from "./components/CareersHeader";
 
 
 const Careers = () => {
@@ -10,6 +11,7 @@ const Careers = () => {
     <Fade top distance="20%" duration={1500}>
       <div className="flex flex-col">
         <Header />
+        <CareersHeader />
         <ContactForm />
         <Footer />
       </div>

@@ -27,7 +27,7 @@ let timelineElements = [
         id: 5,
         year: "2019",
         description: "Kenney Industries moved location to . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor",
-        backgroundImage: 4, 
+        backgroundImage: 5, 
     },
 ]
 

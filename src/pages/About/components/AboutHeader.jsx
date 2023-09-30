@@ -2,7 +2,7 @@ const AboutHeader = () => {
   return (
     <div>
       <div className="absolute top-52 bottom-0 left-0 right-36 sm:right-64 md:right-0 z-20">
-        <h1 className="sm:leading-12 lg:text-4xl lg:leading-15 uppercase text-3xl m-auto w-48 lg:w-80 py-4 text-center leading-10 font-bold border-t border-b">
+        <h1 className="triangle-header-text">
           About
         </h1>
       </div>
