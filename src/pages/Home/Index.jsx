@@ -5,6 +5,8 @@ import HomepageCards from "./components/HomepageCards";
 import GoogleMap from "./components/Location";
 import Footer from "../../components/Footer";
 import ContactForm from "../../components/ContactForm";
+import ImageSlider from "../../components/ImageSlider";
+import { SliderData } from "../../components/SliderData";
 
 
 const Home = () => {
@@ -13,6 +15,7 @@ const Home = () => {
       <Fade top distance="20%" duration={1500}>
         <Header /> 
         <HomepageAbout />
+        <ImageSlider slides={SliderData} />
         <HomepageCards />
         <GoogleMap />
         <ContactForm />
