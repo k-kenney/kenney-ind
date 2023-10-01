@@ -147,7 +147,8 @@ body {
     background-size: fill; /* Scale the image to fit within the container */
     background-position: center center; /* Center the image horizontally and vertically */
     background-repeat: no-repeat;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    margin-top: 60px;
 }
 
 /* Media query for medium screens (max-width: 768px) */
