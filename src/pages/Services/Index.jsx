@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import ServicesHeader from "./components/ServicesHeader";
 import ImageSlider from "../../components/ImageSlider";
 import { SliderData } from "../../components/SliderData";
+import ServiceCards from "./components/ServiceCards";
 
 
 const Services = () => {
@@ -14,6 +15,7 @@ const Services = () => {
       <div className="flex flex-col">
         <Header />
         <ServicesHeader />
+        <ServiceCards />
         <ImageSlider slides={SliderData} />
         <ContactForm />
         <Footer />

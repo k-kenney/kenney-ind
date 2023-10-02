@@ -10,7 +10,7 @@ export default {
           body: ['Montserrat']
         },
         colors: {
-          red: '#DC143C',
+          red: '#B21030',
           blue: '#2B3452',
           white: '#F5F5F5',
           copyright: '#9FA1A1',

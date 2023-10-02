@@ -211,3 +211,45 @@ body {
   background-image: url(./assets/img/kenney2010.png);
 }
 
+/* services page */
+
+.services-card1 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-color: #B21030;
+  background-size: cover;
+  border-bottom: solid 0.5px #F5F5F5;
+}
+
+.services-card2 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-color: #B21030;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 0.5px #F5F5F5;
+}
+
+.services-card3 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-color: #B21030;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 0.5px #F5F5F5;
+}
+
+.services-card4 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-color: #B21030;
+  background-size: cover;
+}
