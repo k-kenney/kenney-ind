@@ -33,7 +33,7 @@ const ImageSlider = ({ slides }) => {
               key={index}
               src={slide.image}
               alt="kenney ind"
-              className="image w-full h-44 m-auto sm:w-96 sm:h-auto md:w-2/3 lg:w-full"
+              className="image w-80 h-auto m-auto sm:w-96 sm:h-auto md:w-2/3 lg:w-full"
             />)}
             
           </div>
