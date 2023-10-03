@@ -212,22 +212,8 @@ body {
   background-image: url(./assets/img/kenney2010.png);
 }
 
-/* services page */
-
-.services-card1 {
-  border-bottom: solid 0.5px #F5F5F5;
-}
-
-.services-card2 {
-  border-bottom: solid 0.5px #F5F5F5;
-}
-
-.services-card3 {
-  border-bottom: solid 0.5px #F5F5F5;
-}
-
 .services-card {
-  @apply p-0 m-auto h-52 w-full bg-red bg-cover
+  @apply p-0 m-0 h-auto w-full bg-red bg-cover rounded-md
 }
 
 .services-title {
@@ -239,9 +225,9 @@ body {
 }
 
 .services-image {
-  @apply w-48 md:w-56
+  @apply w-48 md:w-80 md:p-5
 }
 
 .services-ul {
-  @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0
+  @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0 md:pr-5
 }
