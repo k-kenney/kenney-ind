@@ -3,8 +3,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
 import ServicesHeader from "./components/ServicesHeader";
-import ImageSlider from "../../components/ImageSlider";
-import { SliderData } from "../../components/SliderData";
+import ServicesSlider from "../Services/components/ServicesSlider";
+import { ServicesSliderData } from "../Services/components/ServicesSliderData"
 import ServiceCards from "./components/ServiceCards";
 
 
@@ -16,7 +16,7 @@ const Services = () => {
         <Header />
         <ServicesHeader />
         <ServiceCards />
-        <ImageSlider slides={SliderData} />
+        <ServicesSlider slides={ServicesSliderData} />
         <ContactForm />
         <Footer />
       </div>

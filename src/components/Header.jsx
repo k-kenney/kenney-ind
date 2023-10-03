@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div className="w-full mb-20 relative">
+    <div className="w-full mb-0 relative">
       <div className="bg-right float-right bg-no-repeat m-auto w-1/2 md:w-1/3">
         <img
           src={triangle}
