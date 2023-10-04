@@ -20,7 +20,7 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className="slider mt-16 mb-20 md:mt-20 md:mb-32 lg:my-36">
+    <section className="slider mt-16 mb-20 md:mt-20 md:mb-14 lg:my-32">
       <FaAngleLeft className="left-arrow text-3xl sm:text-4xl md:text-5xl sm:left-14 md:left-16 lg:left-20 xl:left-32" onClick={prevSlide} />
       <FaAngleRight className="right-arrow text-3xl sm:text-4xl md:text-5xl sm:right-14 md:right-16 lg:right-20" onClick={nextSlide} />
       {SliderData.map((slide, index) => {

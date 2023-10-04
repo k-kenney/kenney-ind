@@ -15,8 +15,9 @@ const Home = () => {
       <Fade top distance="20%" duration={1500}>
         <Header /> 
         <HomepageAbout />
-        <ImageSlider slides={SliderData} />
+        
         <HomepageCards />
+        <ImageSlider slides={SliderData} />
         <GoogleMap />
         <ContactForm />
         <Footer />

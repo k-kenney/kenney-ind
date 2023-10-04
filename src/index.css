@@ -142,13 +142,13 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 110vh;
+    height: 100%;
     width: 100%;
     background-image: url(./assets/img/contactWheels.png);
     background-size: fill; /* Scale the image to fit within the container */
     background-position: center center; /* Center the image horizontally and vertically */
     background-repeat: no-repeat;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-top: 20px;
 }
 
@@ -230,4 +230,40 @@ body {
 
 .services-ul {
   @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0 md:pr-5
+}
+
+/* careers */
+
+.careers-card1 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  border-bottom: solid 0.5px #F5F5F5;
+}
+
+.careers-card2 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+}
+
+.careers-card3 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  border-bottom: solid 0.5px #F5F5F5;
+}
+
+.careers-card4 {
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+}
+
+.careers-button {
+  @apply flex justify-center items-center gap-14
 }

@@ -82,7 +82,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="contact-image">
+      <div id="contact-form" className="contact-image">
         <div className="">
           <h1 className="text-center text-3xl xl:text-4xl m-0 pt-9 md:pt-20 lg:pt-24 xl:pt-14">
             Contact Us

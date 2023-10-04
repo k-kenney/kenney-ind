@@ -26,10 +26,10 @@ const navLinks = [
     title: "Careers",
     link: "/careers",
   },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
+  // {
+  //   title: "Contact",
+  //   link: "/contact",
+  // },
 ];
 
 const Navbar = () => {
@@ -50,11 +50,11 @@ const Navbar = () => {
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
-            <ul className="ml-10 flex items-baseline lg:space-x-4 md:space-x-1">
+            <ul className="ml-10 flex items-baseline lg:space-x-4 md:space-x-2">
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-sm"
+                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base"
                 >
                   <Link to={link.link}>{link.title}</Link>
                 </li>
