@@ -8,7 +8,7 @@ import AboutHeader from "./components/AboutHeader";
 const About = () => {
   return (
     <>
-      <Fade top distance="20%" duration={1500}>
+      <Fade top distance="20%" duration={2000}>
         <div className="flex flex-col">
           <Header />
           <AboutHeader />

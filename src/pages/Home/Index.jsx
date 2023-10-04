@@ -12,7 +12,7 @@ import { SliderData } from "../../components/SliderData";
 const Home = () => {
   return (
     <>
-      <Fade top distance="20%" duration={1500}>
+      <Fade top distance="20%" duration={2000}>
         <Header /> 
         <HomepageAbout />
         
