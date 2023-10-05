@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import CareersHeader from "./components/CareersHeader";
 import CareersOpenings from "./components/CareersOpenings";
 import CareersTeam from "./components/CareersTeam";
+import ContactTitle from "../../components/ContactTitle";
 
 
 const Careers = () => {
@@ -16,6 +17,7 @@ const Careers = () => {
         <CareersHeader />
         <CareersTeam />
         <CareersOpenings />
+        <ContactTitle />
         <ContactForm />
         <Footer />
       </div>

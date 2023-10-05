@@ -130,12 +130,16 @@ body {
 
 /* contact page */
 
+.contact-title {
+  @apply text-center text-3xl xl:text-4xl m-0 pt-9 md:pt-10  xl:pt-14 uppercase
+}
+
 .contact-text {
     @apply text-xl pb-1 font-special pt-4 lg:text-2xl
 }
 
 .contact-input {
-    @apply w-72 bg-copyright bg-opacity-20 border-2 border-copyright rounded py-1 px-2 lg:py-2 lg:px-3
+    @apply w-72 bg-copyright bg-opacity-20 border-2 border-copyright rounded py-1 px-2 lg:py-2 lg:px-3 lg:w-96
 }
 
 .contact-image {

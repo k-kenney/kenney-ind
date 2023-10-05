@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
 import Timeline from "./components/Timeline";
 import AboutHeader from "./components/AboutHeader";
+import ContactTitle from "../../components/ContactTitle";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
           <Header />
           <AboutHeader />
           <Timeline />
+          <ContactTitle />
           <ContactForm />
           <Footer />
         </div>

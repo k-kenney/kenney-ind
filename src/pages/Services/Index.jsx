@@ -6,6 +6,7 @@ import ServicesHeader from "./components/ServicesHeader";
 import ServicesSlider from "../Services/components/ServicesSlider";
 import { ServicesSliderData } from "../Services/components/ServicesSliderData"
 import ServiceCards from "./components/ServiceCards";
+import ContactTitle from "../../components/ContactTitle";
 
 
 const Services = () => {
@@ -17,6 +18,7 @@ const Services = () => {
         <ServicesHeader />
         <ServiceCards />
         <ServicesSlider slides={ServicesSliderData} />
+        <ContactTitle />
         <ContactForm />
         <Footer />
       </div>

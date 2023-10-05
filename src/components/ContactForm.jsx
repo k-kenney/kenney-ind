@@ -82,25 +82,22 @@ const ContactForm = () => {
 
   return (
     <>
-      <div id="contact-form" className="contact-image">
-        <div className="">
-          <h1 className="text-center text-3xl xl:text-4xl m-0 pt-9 md:pt-20 lg:pt-24 xl:pt-14">
-            Contact Us
-          </h1>
+      <div id="contact-form">
+        <div>
           <form
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
             data-netlify-honeypot="bot-field"
             action="/success"
-            className="w-full h-auto pt-7 md:pt-0 xl:pt-2 flex flex-col items-center justify-center sm:flex-row sm:items-start m-auto"
+            className="w-full h-auto pt-7 md:pt-0 xl:pt-2 flex flex-col justify-center sm:flex-row m-auto items-center md:items-start"
           >
             <input type="hidden" name="form-name" value="contact" />
 
             <div hidden>
               <input name="bot-field" />
             </div>
-            <div className="md:flex md:justify-center md:m-0 md:items-center md:gap-20 md:pt-8 lg:gap-32 xl:gap-40 xl:pt-12">
+            <div className="md:flex md:justify-center md:m-0 md:items-start md:gap-20 md:pt-8 lg:gap-32 xl:gap-44 xl:pt-12">
               <div className="">
                 <div className="">
                   <div className="contact-text">
@@ -108,7 +105,7 @@ const ContactForm = () => {
                       Company*
                     </label>
                   </div>
-                  <div className="">
+                  <div>
                     <input
                       className="contact-input"
                       type="text"

@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
 import QuoteHeader from "./components/QuoteHeader";
+import QuoteTitle from "./components/QuoteTitle";
 
 
 const Quote = () => {
@@ -12,6 +13,7 @@ const Quote = () => {
       <div className="flex flex-col">
         <Header />
         <QuoteHeader />
+        <QuoteTitle />
         <ContactForm />
         <Footer />
       </div>

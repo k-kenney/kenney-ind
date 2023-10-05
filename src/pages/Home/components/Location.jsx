@@ -24,7 +24,7 @@ function GoogleMap() {
     <>
         <div className='py-32 md:flex md:gap-20 md:w-4/5 lg:w-2/3 md:items-center m-auto'>
             <div className='flex flex-col justify-center items-center pb-14'>
-                <h1 className='text-3xl xl:text-4xl pb-6'>Location</h1>
+                <h1 className='text-3xl xl:text-4xl pb-6 uppercase'>Location</h1>
                 <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
                 <p className='text-lg text-center xl:text-xl underline'>2110 Panoramic Circle <br/> Dallas, Texas 75212</p>
                 </a>
