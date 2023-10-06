@@ -6,16 +6,15 @@ import GoogleMap from "./components/Location";
 import Footer from "../../components/Footer";
 import ContactForm from "../../components/ContactForm";
 import ImageSlider from "../../components/ImageSlider";
-import { SliderData } from "../../components/SliderData";
+import { SliderData } from "../../utils/SliderData";
 import ContactTitle from "../../components/ContactTitle";
-
 
 const Home = () => {
   return (
     <>
       <Fade top distance="20%" duration={2000}>
-        <Header /> 
-        <HomepageAbout />  
+        <Header />
+        <HomepageAbout />
         <HomepageCards />
         <ImageSlider slides={SliderData} />
         <GoogleMap />

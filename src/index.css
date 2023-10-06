@@ -236,6 +236,18 @@ body {
   @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0 md:pr-5
 }
 
+.card-container {
+  position: relative;
+}
+.card-image {
+  opacity: 0.2;
+}
+.card-content {
+  position: absolute;
+  top: 20%;
+  padding: 20px;
+}
+
 /* careers */
 
 .careers-card1 {

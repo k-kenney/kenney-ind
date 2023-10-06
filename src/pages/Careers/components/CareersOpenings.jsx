@@ -1,5 +1,6 @@
 import { FiArrowRightCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { OpeningsData } from "../../../utils/OpeningsData";
 
 const CareersOpenings = () => {
   return (
@@ -9,40 +10,18 @@ const CareersOpenings = () => {
       </h1>
       <div className="flex flex-col md:flex-row py-12 md:my-14">
         <div className="w-full">
-          <div className="careers-card1 homepage-card-text md:border-t-1">
-            <Link to="/Openings">
-              <button className="careers-button">
-                <h2 className="homepage-card-h2">CNC Operator</h2>
-                <FiArrowRightCircle className="text-3xl md:text-4xl" />
-              </button>
-            </Link>
-          </div>
-          <div className="careers-card2 homepage-card-text border-b-1">
-            <Link to="/Openings">
-              <button className="careers-button">
-                <h2 className="homepage-card-h2">Machinist</h2>
-                <FiArrowRightCircle className="text-3xl md:text-4xl" />
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="w-full">
-          <div className="careers-card3 homepage-card-text md:border-l-1 md:border-t-1 md:border-white">
-            <Link to="/Openings">
-              <button className="careers-button">
-                <h2 className="homepage-card-h2">CNC Programmer</h2>
-                <FiArrowRightCircle className="text-3xl md:text-4xl" />
-              </button>
-            </Link>
-          </div>
-          <div className="careers-card4 homepage-card-text md:border-l-1 md:border-b-1 md:border-white">
-            <Link to="/Openings">
-              <button className="careers-button">
-                <h2 className="homepage-card-h2">Welder</h2>
-                <FiArrowRightCircle className="text-3xl md:text-4xl" />
-              </button>
-            </Link>
-          </div>
+          {OpeningsData.map((opening, index) => {
+            return (
+              <div key={index} className="careers-card1 homepage-card-text md:border-t-1">
+                <Link to={`/Openings/${opening.id}`}>
+                  <button className="careers-button">
+                    <h2 className="homepage-card-h2">{opening.title}</h2>
+                    <FiArrowRightCircle className="text-3xl md:text-4xl" />
+                  </button>
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
