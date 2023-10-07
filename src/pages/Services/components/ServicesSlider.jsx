@@ -25,11 +25,11 @@ const ServicesSlider = ({ slides }) => {
       </h1>
       <section className="slider mt-16 mb-20 md:mt-20 md:mb-32 lg:my-36">
         <FaAngleLeft
-          className="left-arrow text-3xl sm:text-4xl md:text-5xl sm:left-14 md:left-16 lg:left-20 xl:left-32"
+          className="left-arrow text-3xl sm:text-4xl md:text-5xl sm:left-20 md:left-28 lg:left-40 xl:left-48"
           onClick={prevSlide}
         />
         <FaAngleRight
-          className="right-arrow text-3xl sm:text-4xl md:text-5xl sm:right-14 md:right-16 lg:right-20"
+          className="right-arrow text-3xl sm:text-4xl md:text-5xl sm:right-20 md:right-28 lg:right-40 xl:right-48"
           onClick={nextSlide}
         />
         {ServicesSliderData.map((slide, index) => {
@@ -39,20 +39,20 @@ const ServicesSlider = ({ slides }) => {
               key={index}
             >
               {index === current && (
-                <div className="card-container">
-                  <div className="card-image">
+                <div className="card-container m-auto">
+                  <div className="card-image lg:w-full">
                     <img
                       key={index}
                       src={slide.image}
                       alt="kenney ind"
-                      className="image w-80 h-auto m-auto sm:w-96 sm:h-auto md:w-2/3 lg:w-full"
+                      className="image w-96 h-auto m-auto lg:w-3/4 sm:h-auto "
                     />
                   </div>
-                  <div className="card-content px-6 py-4">
+                  <div className="card-content px-6 py-4 w-3/4 lg:right-20">
                     <div className="font-bold text-xl mb-2 text-white">
                       {slide.title}
                     </div>
-                    <p className="text-gray-700 text-base text-white">
+                    <p className="text-base text-white">
                       {slide.description}
                     </p>
                   </div>
