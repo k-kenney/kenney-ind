@@ -5,6 +5,8 @@ import Navbar from "../../components/Navbar";
 import { useParams } from "react-router-dom";
 import { OpeningsData } from "../../utils/OpeningsData";
 
+import { FaArrowLeft } from "react-icons/fa6";
+
 const Openings = () => {
   const { id } = useParams();
   const [selectedOpening] = OpeningsData.filter((opening) => id === opening.id);
@@ -17,30 +19,30 @@ const Openings = () => {
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase">
           {selectedOpening.title}
         </h1>
-        <Link to="/Careers">
-          <h3 className="underline pt-3">Back to careers page</h3>
-        </Link>
       </div>
-      <div>
+      <div className="w-2/3 m-auto">
         <h1
           className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-center"
           style={{ marginTop: "10%" }}
         >
           About
         </h1>
-        <p>{selectedOpening.about}</p>
+        <p className="my-10 text-lg leading-9">{selectedOpening.about}</p>
 
         <h1
           className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-center"
           style={{ marginTop: "10%" }}
         >
-          What
+          What You'll Do
         </h1>
         {/* List */}
-        <ul>
+        <ul className="my-10">
           {selectedOpening.what.map((element) => {
             return (
-              <li className="list-disc list-inside" key={element}>
+              <li
+                className="list-disc list-inside my-1 text-lg leading-9"
+                key={element}
+              >
                 {element}
               </li>
             );
@@ -51,14 +53,17 @@ const Openings = () => {
           className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-center"
           style={{ marginTop: "10%" }}
         >
-          You
+          About You
         </h1>
 
         {/* List */}
-        <ul>
+        <ul className="my-10">
           {selectedOpening.you.map((element) => {
             return (
-              <li className="list-disc list-inside" key={element}>
+              <li
+                className="list-disc list-inside my-1 text-lg leading-9"
+                key={element}
+              >
                 {element}
               </li>
             );
@@ -73,16 +78,26 @@ const Openings = () => {
         </h1>
 
         {/* List */}
-        <ul>
+        <ul className="my-10">
           {selectedOpening.benefits.map((element) => {
             return (
-              <li className="list-disc list-inside" key={element}>
+              <li
+                className="list-disc list-inside my-1 text-lg leading-9"
+                key={element}
+              >
                 {element}
               </li>
             );
           })}
         </ul>
       </div>
+
+      <Link to="/Careers">
+        <div className="flex justify-center items-center text-lg gap-4 py-10">
+          <FaArrowLeft />
+          <h3 className="underline">Back to careers page</h3>
+        </div>
+      </Link>
     </div>
   );
 };

@@ -9,10 +9,10 @@ const CareersOpenings = () => {
         Current Openings
       </h1>
       <div className="flex flex-col md:flex-row py-12 md:my-14">
-        <div className="w-full">
+        <div className="w-full md:grid md:grid-cols-2">
           {OpeningsData.map((opening, index) => {
             return (
-              <div key={index} className="careers-card1 homepage-card-text md:border-t-1">
+              <div key={index} className="careers-card1 homepage-card-text md:border-1">
                 <Link to={`/Openings/${opening.id}`}>
                   <button className="careers-button">
                     <h2 className="homepage-card-h2">{opening.title}</h2>
