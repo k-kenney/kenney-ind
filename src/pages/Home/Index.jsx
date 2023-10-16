@@ -8,6 +8,7 @@ import ContactForm from "../../components/ContactForm";
 import ImageSlider from "../../components/ImageSlider";
 import { SliderData } from "../../utils/SliderData";
 import ContactTitle from "../../components/ContactTitle";
+import Quality from "./components/Quality";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Header />
         <HomepageAbout />
         <HomepageCards />
+        <Quality />
         <ImageSlider slides={SliderData} />
         <GoogleMap />
         <ContactTitle />

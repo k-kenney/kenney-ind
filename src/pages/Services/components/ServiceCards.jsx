@@ -30,7 +30,7 @@ const ServiceCards = () => {
               <div className="services-flex">
                 <img className="services-image" src={welding} />
                 <ul className="services-ul">
-                  <li>Steel, Alum, SS, Ti</li>
+                  <li>Steel, Aluminum, Stainless Steel</li>
                   <li>Qualified WPS</li>
                   <li>GMAC, GTAW, FCAW, +</li>
                 </ul>
