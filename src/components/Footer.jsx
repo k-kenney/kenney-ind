@@ -19,18 +19,18 @@ const Footer = () => {
         <div className="flex items-center justify-between w-3/4 m-auto absolute z-20 right-0 left-0">
           <div className="leading-12 font-bold text-lg">
             <Link to="/about">
-              <h3>About</h3>
+              <h3 className="transform transition ease duration-300 hover:scale-110">About</h3>
             </Link>
             <Link to="/services">
-              <h3>Services</h3>
+              <h3 className="transform transition ease ">Services</h3>
             </Link>
             <Link to="/quote">
-              <h3>Quote</h3>
+              <h3 className="transform transition ease duration-300 hover:scale-110">Quote</h3>
             </Link>
             <Link to="/careers">
-              <h3>Careers</h3>
+              <h3 className="transform transition ease duration-300 hover:scale-110">Careers</h3>
             </Link>
-            <button onClick={scrollToContact}>Contact us</button>
+            <button onClick={scrollToContact} className="transform transition ease duration-300 hover:scale-110">Contact us</button>
           </div>
           <div className="text-end">
             <h3 className="text-lg font-bold pb-4">Location</h3>

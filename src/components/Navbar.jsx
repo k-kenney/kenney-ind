@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="">
-              <img className="w-40 md:w-40 lg:w-56 transition duration-300 ease-in hover:opacity-7" src={kenneyLogo} alt="Kenney logo" />
+              <img className="w-40 md:w-40 lg:w-56 transform transition ease duration-300 hover:scale-110" src={kenneyLogo} alt="Kenney logo" />
             </a>
           </div>
           {/* navlinks */}

@@ -1,3 +1,4 @@
+import qualityPDF from "../../../../dist/assets/quality-dummy.pdf"
 
 const Quality = () => {
   return (
@@ -11,6 +12,9 @@ const Quality = () => {
         reprehenderit pariatur enim dolor distinctio. Corporis ex accusantium
         repellendus beatae deserunt delectus commodi?
       </p>
+      <a href={qualityPDF} rel="noreferrer" target="_blank">
+        <button className="homepage-btn mt-10">Learn more</button>
+      </a>
     </div>
   );
 };

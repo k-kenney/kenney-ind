@@ -5,6 +5,7 @@ export default {
   ],
     theme: {
       extend: {
+        display: ["group-hover"],
         fontFamily: {
           special: ['Darker Grotesque'],
           body: ['Montserrat']
