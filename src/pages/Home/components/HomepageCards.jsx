@@ -1,14 +1,14 @@
 const HomepageCards = () => {
   return (
-    <div className="flex flex-col md:flex-row py-12">
+    <div className="flex flex-col md:flex-row py-12 ">
       <div className="w-full">
-        <button className="group homepage-card1 homepage-card-text lg:h-64">
+        <button className="group homepage-card1 homepage-card-text lg:h-64 bg-slate-500 ">
           <div className="group-hover:collapse cursor-pointer" >
             <h2 className="homepage-card-h2 uppercase">CNC Machining</h2>
           </div>
  
-          <div className="hidden group-hover:block">
-            <h2 className="homepage-card-h2">
+          <div className="hidden group-hover:block fade-in-bottom bg-slate-600">
+            <h2 className="homepage-card-h2 ">
               <ul>
                 <li>one thing</li>
                 <li>two things</li>

@@ -39,6 +39,19 @@ const Navbar = () => {
     setOpen((prev) => !prev);
     console.log(open);
   };
+  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+
+
+  const showDropDownHandle = (title)=>{
+    if(title === 'About')  setShowAboutDropdown(true)
+  }
+
+
+  const hideDropDownHandle = (title)=>{
+    if(title === 'About')  setShowAboutDropdown(false)
+  }
+  
+
   return (
     <div>
       <div className="mx-auto py-14 px-5 lg:px-8 w-5/6 ">
@@ -55,10 +68,24 @@ const Navbar = () => {
                 <li
                   key={index}
                   className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base transform ease hover:scale-110"
+                  onMouseEnter={()=>{showDropDownHandle(link.title)}}
+                  onMouseLeave={()=>{hideDropDownHandle(link.title)}}
+                    
                 >
                   <Link to={link.link}>{link.title}</Link>
+
+                  {showAboutDropdown && link.title === 'About' && (
+                  <div className="absolute top-14 mt-2 bg-gray-800 text-white rounded-md py-2">
+                    <Link to="/team">Our Team</Link>
+                    <Link to="/history">Our History</Link>
+                    
+                  </div>
+                 )}
                 </li>
+                
+
               ))}
+              
             </ul>
           </div>
           {/*  hamburger button */}
@@ -83,8 +110,10 @@ const Navbar = () => {
               <li
                 key={index}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium transform transition ease duration-300 hover:scale-110"
+               
               >
                 <Link to={link.link}>{link.title}</Link>
+              
               </li>
             ))}
           </ul>

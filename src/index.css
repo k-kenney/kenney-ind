@@ -1,20 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    color: #F5F5F5;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: medium;
+  color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
 }
 
 /* Global */
 .triangle-header-text {
-  @apply sm:leading-12 lg:text-4xl lg:leading-15 uppercase md:text-4xl text-3xl m-auto md:w-56 w-48 lg:w-80 py-4 text-center leading-10 font-bold border-t border-b
+  @apply sm:leading-12 lg:text-4xl lg:leading-15 uppercase md:text-4xl text-3xl m-auto md:w-56 w-48 lg:w-80 py-4 text-center leading-10 font-bold border-t border-b;
 }
 
 /* homepage */
@@ -26,7 +24,7 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .image {
@@ -38,7 +36,7 @@ body {
   /* top: 50%; */
   right: 18px;
   /* font-size: 2.5rem; */
-  color: #F5F5F5;
+  color: #f5f5f5;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -49,7 +47,7 @@ body {
   /* top: 50%; */
   left: 18px;
   /* font-size: 2.5rem; */
-  color: #F5F5F5;
+  color: #f5f5f5;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -67,101 +65,101 @@ body {
 }
 
 .homepage-card1 {
-    padding: 0;
-    margin: auto;
-    height: 180px;
-    width: 100%;
-    background-image: url(./assets/img/manufacturing.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: solid 0.5px #F5F5F5;
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-image: url(./assets/img/manufacturing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 0.5px #f5f5f5;
 }
 
 .homepage-card2 {
-    padding: 0;
-    margin: auto;
-    height: 180px;
-    width: 100%;
-    background-image: url(./assets/img/machining.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: solid 0.5px #F5F5F5;
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-image: url(./assets/img/machining.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 0.5px #f5f5f5;
 }
 
 .homepage-card3 {
-    padding: 0;
-    margin: auto;
-    height: 180px;
-    width: 100%;
-    background-image: url(./assets/img/welding.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: solid 0.5px #F5F5F5;
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-image: url(./assets/img/welding.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 0.5px #f5f5f5;
 }
 
 .homepage-card4 {
-    padding: 0;
-    margin: auto;
-    height: 180px;
-    width: 100%;
-    background-image: url(./assets/img/quality.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 0;
+  margin: auto;
+  height: 180px;
+  width: 100%;
+  background-image: url(./assets/img/quality.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .homepage-btn {
-    @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-lg font-special lg:py-3 lg:px-4 lg:text-2xl z-50 transition-all duration-500 hover:bg-gray-600
+  @apply bg-copyright bg-opacity-40 border rounded-lg py-2 px-3 text-white text-lg font-special lg:py-3 lg:px-4 lg:text-2xl z-50 transition-all duration-500 hover:bg-gray-600;
 }
 
 .homepage-card-text {
-    @apply flex flex-col justify-center items-center
+  @apply flex flex-col justify-center items-center;
 }
 
 .homepage-card-h2 {
-    @apply text-2xl font-semibold pb-1 xl:text-4xl
+  @apply text-2xl font-semibold pb-1 xl:text-4xl;
 }
 
 .homepage-card-h3 {
-    @apply font-special text-xl pt-2 xl:text-3xl
+  @apply font-special text-xl pt-2 xl:text-3xl;
 }
 
 .homepage-span {
-    @apply text-red font-bold
+  @apply text-red font-bold;
 }
 
 /* contact page */
 
 .contact-title {
-  @apply text-center text-3xl xl:text-4xl m-0 pt-9 md:pt-10  xl:pt-14 uppercase
+  @apply text-center text-3xl xl:text-4xl m-0 pt-9 md:pt-10  xl:pt-14 uppercase;
 }
 
 .contact-text {
-    @apply text-xl pb-1 font-special pt-4 lg:text-2xl
+  @apply text-xl pb-1 font-special pt-4 lg:text-2xl;
 }
 
 .contact-input {
-    @apply w-72 bg-copyright bg-opacity-20 border-2 border-copyright rounded py-1 px-2 lg:py-2 lg:px-3 lg:w-96
+  @apply w-72 bg-copyright bg-opacity-20 border-2 border-copyright rounded py-1 px-2 lg:py-2 lg:px-3 lg:w-96;
 }
 
 .contact-image {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    background-image: url(./assets/img/contactWheels.png);
-    background-size: fill; /* Scale the image to fit within the container */
-    background-position: center center; /* Center the image horizontally and vertically */
-    background-repeat: no-repeat;
-    /* margin-bottom: 40px; */
-    margin-top: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/img/contactWheels.png);
+  background-size: fill; /* Scale the image to fit within the container */
+  background-position: center center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat;
+  /* margin-bottom: 40px; */
+  margin-top: 20px;
 }
 
 /* Media query for medium screens (max-width: 768px) */
 @media (min-width: 768px) {
-    .contact-image {
-      height: 90vh; /* Set the desired height for medium screens */
-    }
+  .contact-image {
+    height: 90vh; /* Set the desired height for medium screens */
   }
+}
 
 /* About page */
 /* About Header */
@@ -177,17 +175,16 @@ body {
   width: 43%;
 }
 
-
 /* About timeline */
-  .vertical-timeline-element-content {
+.vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
-.vertical-timeline-element-icon{
+.vertical-timeline-element-icon {
   background-color: white;
   box-shadow: none;
 }
@@ -217,23 +214,23 @@ body {
 }
 
 .services-card {
-  @apply p-0 m-0 h-auto w-full bg-red bg-cover md:rounded-md
+  @apply p-0 m-0 h-auto w-full bg-red bg-cover md:rounded-md;
 }
 
 .services-title {
-  @apply pt-6 text-xl font-semibold pb-1 xl:text-3xl 
+  @apply pt-6 text-xl font-semibold pb-1 xl:text-3xl;
 }
 
 .services-flex {
-  @apply flex m-0 gap-6 justify-center items-center w-full pb-5 pt-1
+  @apply flex m-0 gap-6 justify-center items-center w-full pb-5 pt-1;
 }
 
 .services-image {
-  @apply w-44 sm:w-52 md:w-80 md:p-5
+  @apply w-44 sm:w-52 md:w-80 md:p-5;
 }
 
 .services-ul {
-  @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0 md:pr-5
+  @apply list-disc text-base lg:text-lg xl:text-xl w-48 md:w-56 m-0 md:pr-5;
 }
 
 .card-container {
@@ -255,8 +252,8 @@ body {
   margin: auto;
   height: 180px;
   width: 100%;
-  border-bottom: solid 0.5px #F5F5F5;
-  border-top: solid 0.5px #F5F5F5;
+  border-bottom: solid 0.5px #f5f5f5;
+  border-top: solid 0.5px #f5f5f5;
 }
 
 /* .careers-card2 {
@@ -282,5 +279,22 @@ body {
 } */
 
 .careers-button {
-  @apply flex justify-center items-center gap-14 transition-all duration-500 hover:text-copyright
+  @apply flex justify-center items-center gap-14 transition-all duration-500 hover:text-copyright;
+}
+.fade-in-bottom {
+  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  margin-top: -40px;
+}
+
+@keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
 }
