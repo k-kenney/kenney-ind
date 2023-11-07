@@ -54,7 +54,7 @@ const Navbar = () => {
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base"
+                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base transform ease hover:scale-110"
                 >
                   <Link to={link.link}>{link.title}</Link>
                 </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               <span className="sr-only">Open Main Menu</span>
               
-              {open === true ? <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto" /> : <FaBars className="w-9 h-9" />}
+              {open === true ? <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto transform transition ease duration-300 hover:scale-110" /> : <FaBars className="w-9 h-9 transform transition ease duration-300 hover:scale-110" />}
             </button>
           </div>
         </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium transform transition ease duration-300 hover:scale-110"
               >
                 <Link to={link.link}>{link.title}</Link>
               </li>

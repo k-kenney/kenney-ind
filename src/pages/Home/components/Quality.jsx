@@ -1,4 +1,4 @@
-import qualityPDF from "../../../../dist/assets/quality-dummy.pdf"
+import qualityPDF from "../../../assets/img/Quality.png"
 
 const Quality = () => {
   return (

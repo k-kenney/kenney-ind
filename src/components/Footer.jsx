@@ -22,7 +22,7 @@ const Footer = () => {
               <h3 className="transform transition ease duration-300 hover:scale-110">About</h3>
             </Link>
             <Link to="/services">
-              <h3 className="transform transition ease ">Services</h3>
+              <h3 className="transform transition ease duration-300 hover:scale-110">Services</h3>
             </Link>
             <Link to="/quote">
               <h3 className="transform transition ease duration-300 hover:scale-110">Quote</h3>
