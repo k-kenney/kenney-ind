@@ -2,44 +2,82 @@ const HomepageCards = () => {
   return (
     <div className="flex flex-col md:flex-row py-12 ">
       <div className="w-full">
-        <button className="group homepage-card1 homepage-card-text lg:h-64 bg-slate-500 ">
-          <div className="group-hover:collapse cursor-pointer" >
-            <h2 className="homepage-card-h2 uppercase">CNC Machining</h2>
+        <button className="group homepage-card1 homepage-card-text lg:h-64 md:border-r-1 md:border-t-1">
+          <div
+            className="group group-hover:invisible transition duration-300 delay-150 hover:delay-300 cursor-pointer
+"
+          >
+            <h2 className="homepage-card-h2">CNC Machining</h2>
           </div>
- 
-          <div className="hidden group-hover:block fade-in-bottom bg-slate-600">
-            <h2 className="homepage-card-h2 ">
+
+          <div className="hidden group-hover:block scale-in-center">
+            <h2 className="homepage-card-h2-hover">
               <ul>
-                <li>one thing</li>
-                <li>two things</li>
+                <li>Laser cutting</li>
+                <li>CNC punch</li>
+                <li>Bending</li>
+                <li>Rolling</li>
               </ul>
             </h2>
           </div>
         </button>
-        <div className="homepage-card2 homepage-card-text md:border-none lg:h-64">
-          <h2 className="homepage-card-h2 uppercase">Welding</h2>
-          {/* <h3 className="homepage-card-h3">
-            <span className="homepage-span">52+</span> CNC machines in operation
-          </h3> */}
-        </div>
+        <button className="group homepage-card3 homepage-card-text lg:h-64 md:border-r-1">
+          <div
+            className="group group-hover:invisible transition duration-300 delay-150 hover:delay-300 cursor-pointer
+"
+          >
+            <h2 className="homepage-card-h2">welding</h2>
+          </div>
+
+          <div className="hidden group-hover:block scale-in-center">
+            <h2 className="homepage-card-h2-hover">
+              <ul>
+                <li>Laser cutting</li>
+                <li>CNC punch</li>
+                <li>Bending</li>
+                <li>Rolling</li>
+              </ul>
+            </h2>
+          </div>
+        </button>
       </div>
       <div className="w-full">
-        <div className="homepage-card3 homepage-card-text md:border-l-1 md:border-white lg:h-64">
-          <h2 className="homepage-card-h2 uppercase">
-            Sheet Metal Fabrication
-          </h2>
-          {/* <h3 className="homepage-card-h3">
-            <span className="homepage-span">ASME</span> code stampes{" "}
-            <span className="homepage-span">ASME</span> certified
-          </h3> */}
-        </div>
-        <div className="homepage-card4 homepage-card-text md:border-l-1 md:border-white lg:h-64">
-          <h2 className="homepage-card-h2 uppercase">Assembly</h2>
-          {/* <h3 className="homepage-card-h3">
-            <span className="homepage-span">15+</span> years of ISO quality
-            certification
-          </h3> */}
-        </div>
+        <button className="group homepage-card2 homepage-card-text lg:h-64 md:border-t-1">
+          <div
+            className="group group-hover:invisible transition duration-300 delay-150 hover:delay-300 cursor-pointer
+"
+          >
+            <h2 className="homepage-card-h2">sheet metal fabrication</h2>
+          </div>
+
+          <div className="hidden group-hover:block scale-in-center">
+            <h2 className="homepage-card-h2-hover">
+              <ul>
+                <li>Laser cutting</li>
+                <li>CNC punch</li>
+                <li>Bending</li>
+                <li>Rolling</li>
+              </ul>
+            </h2>
+          </div>
+        </button>
+        <button className="group homepage-card4 homepage-card-text lg:h-64 md:border-b-1">
+          <div className="group group-hover:invisible transition duration-300 delay-150 hover:delay-300 cursor-pointer
+" >
+            <h2 className="homepage-card-h2">assembly</h2>
+          </div>
+ 
+          <div className="hidden group-hover:block scale-in-center">
+            <h2 className="homepage-card-h2-hover">
+              <ul>
+                <li>Laser cutting</li>
+                <li>CNC punch</li>
+                <li>Bending</li>
+                <li>Rolling</li>
+              </ul>
+            </h2>
+          </div>
+        </button>
       </div>
     </div>
   );
