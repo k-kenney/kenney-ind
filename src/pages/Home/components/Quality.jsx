@@ -1,4 +1,4 @@
-import qualityPDF from "../../../assets/img/Quality.png"
+import qualityPDF from "../../../assets/img/quality.png"
 
 const Quality = () => {
   return (
