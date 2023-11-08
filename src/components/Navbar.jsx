@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import kenneyLogo from ".././assets/img/kenneyLogo.svg";
+import { FaAngleRight } from "react-icons/fa6";
+import qualityPDF from "../../src/assets/img/quality.png"
 
 // Import your page components
 
@@ -40,17 +42,21 @@ const Navbar = () => {
     console.log(open);
   };
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+  const [hoveringOverAbout, setHoveringOverAbout] = useState(false);
 
+  const showDropDownHandle = (title) => {
+    if (title === "About") {
+      setShowAboutDropdown(true);
+      setHoveringOverAbout(true);
+    }
+  };
 
-  const showDropDownHandle = (title)=>{
-    if(title === 'About')  setShowAboutDropdown(true)
-  }
-
-
-  const hideDropDownHandle = (title)=>{
-    if(title === 'About')  setShowAboutDropdown(false)
-  }
-  
+  const hideDropDownHandle = (title) => {
+    if (title === "About") {
+      setShowAboutDropdown(false);
+      setHoveringOverAbout(false);
+    }
+  };
 
   return (
     <div>
@@ -58,34 +64,45 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="">
-              <img className="w-40 md:w-40 lg:w-56 transform transition ease duration-300 hover:scale-110" src={kenneyLogo} alt="Kenney logo" />
+              <img
+                className="w-40 md:w-40 lg:w-56 transform transition ease duration-300 hover:scale-110"
+                src={kenneyLogo}
+                alt="Kenney logo"
+              />
             </a>
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
             <ul className="ml-10 flex items-baseline lg:space-x-4 md:space-x-2">
               {navLinks.map((link, index) => (
-                <li
-                  key={index}
-                  className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base transform ease hover:scale-110"
-                  onMouseEnter={()=>{showDropDownHandle(link.title)}}
-                  onMouseLeave={()=>{hideDropDownHandle(link.title)}}
-                    
-                >
-                  <Link to={link.link}>{link.title}</Link>
-
-                  {showAboutDropdown && link.title === 'About' && (
-                  <div className="absolute top-14 mt-2 bg-gray-800 text-white rounded-md py-2">
-                    <Link to="/team">Our Team</Link>
-                    <Link to="/history">Our History</Link>
-                    
-                  </div>
+                 <li
+                 key={index}
+                 className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base transform ease hover:scale-110"
+                 onMouseEnter={() => showDropDownHandle(link.title)}
+                 onMouseLeave={() => hideDropDownHandle(link.title)}
+               >
+                 <div className="flex items-center">
+                   {link.title === "About" ? (
+                     <div
+                       className="flex items-center gap-1 cursor-pointer"
+                       onMouseEnter={() => setHoveringOverAbout(true)}
+                       onMouseLeave={() => setHoveringOverAbout(false)}
+                     >
+                       <span>{link.title}</span>
+                       {hoveringOverAbout ? null : <FaAngleRight />}
+                     </div>
+                   ) : (
+                     <Link to={link.link}>{link.title}</Link>
+                   )}
+                 </div>
+                 {showAboutDropdown && link.title === "About" && (
+                   <div className="absolute top-10 left-0 bg-inherit text-gray-300 hover:text-white rounded-md py-1 px-4">
+                     <a href={qualityPDF}>Quality</a>
+                   </div>
                  )}
-                </li>
-                
+               </li>
 
               ))}
-              
             </ul>
           </div>
           {/*  hamburger button */}
@@ -96,8 +113,12 @@ const Navbar = () => {
               className="inline-flex item-center justify-center p-2 rounded-md transition duration-300 ease-in text-gray-400 hover:text-white"
             >
               <span className="sr-only">Open Main Menu</span>
-              
-              {open === true ? <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto transform transition ease duration-300 hover:scale-110" /> : <FaBars className="w-9 h-9 transform transition ease duration-300 hover:scale-110" />}
+
+              {open === true ? (
+                <FaTimes className="w-9 h-9 absolute z-50 top-14 right-0 left-0 m-auto transform transition ease duration-300 hover:scale-110" />
+              ) : (
+                <FaBars className="w-9 h-9 transform transition ease duration-300 hover:scale-110" />
+              )}
             </button>
           </div>
         </div>
@@ -110,10 +131,8 @@ const Navbar = () => {
               <li
                 key={index}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium transform transition ease duration-300 hover:scale-110"
-               
               >
                 <Link to={link.link}>{link.title}</Link>
-              
               </li>
             ))}
           </ul>
