@@ -316,3 +316,30 @@ body {
   }
 }
 
+
+/* Drop Down Styles */
+/* Your custom styles for the dropdown menu */
+.custom-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  padding: 10px 5px;
+  background-color: #a3a3a3;
+  color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown-menu a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid balack;
+}
+
+.custom-dropdown-menu a:hover {
+  background-color: #555;
+}

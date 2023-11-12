@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import kenneyLogo from ".././assets/img/kenneyLogo.svg";
-import { FaAngleRight } from "react-icons/fa6";
-import qualityPDF from "../../src/assets/img/quality.png"
+import { Link, useLocation } from "react-router-dom";
+import kenneyLogo from "../.././assets/img/kenneyLogo.svg";
+import AboutDropDown from "./AboutDropDown";
+import CareerDropDown from "./CareerDropDown";
+
 
 // Import your page components
 
@@ -13,7 +14,7 @@ const navLinks = [
     link: "/",
   },
   {
-    title: "About",
+    title: <AboutDropDown />,
     link: "/about",
   },
   {
@@ -25,38 +26,27 @@ const navLinks = [
     link: "/quote",
   },
   {
-    title: "Careers",
+    title: <CareerDropDown />,
     link: "/careers",
   },
   // {
-  //   title: "Contact",
-  //   link: "/contact",
+  //   title: "Settings",
+  //   link: "/settings",
   // },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation()
+  console.log(location);
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
     console.log(open);
   };
-  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
-  const [hoveringOverAbout, setHoveringOverAbout] = useState(false);
+ 
 
-  const showDropDownHandle = (title) => {
-    if (title === "About") {
-      setShowAboutDropdown(true);
-      setHoveringOverAbout(true);
-    }
-  };
 
-  const hideDropDownHandle = (title) => {
-    if (title === "About") {
-      setShowAboutDropdown(false);
-      setHoveringOverAbout(false);
-    }
-  };
 
   return (
     <div>
@@ -74,35 +64,14 @@ const Navbar = () => {
           {/* navlinks */}
           <div className="hidden md:block">
             <ul className="ml-10 flex items-baseline lg:space-x-4 md:space-x-2">
-              {navLinks.map((link, index) => (
-                 <li
-                 key={index}
-                 className="text-gray-300 transition-all duration-500 hover:bg-gray-600 px-3 py-2 rounded-md lg:text-lg md:text-base transform ease hover:scale-110"
-                 onMouseEnter={() => showDropDownHandle(link.title)}
-                 onMouseLeave={() => hideDropDownHandle(link.title)}
-               >
-                 <div className="flex items-center">
-                   {link.title === "About" ? (
-                     <div
-                       className="flex items-center gap-1 cursor-pointer"
-                       onMouseEnter={() => setHoveringOverAbout(true)}
-                       onMouseLeave={() => setHoveringOverAbout(false)}
-                     >
-                       <span>{link.title}</span>
-                       {hoveringOverAbout ? null : <FaAngleRight />}
-                     </div>
-                   ) : (
-                     <Link to={link.link}>{link.title}</Link>
-                   )}
-                 </div>
-                 {showAboutDropdown && link.title === "About" && (
-                   <div className="absolute top-10 left-0 bg-inherit text-gray-300 hover:text-white rounded-md py-1 px-4">
-                     <a href={qualityPDF}>Quality</a>
-                   </div>
-                 )}
-               </li>
-
-              ))}
+            {navLinks.map((link, index) => (
+              <li
+                key={index}
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium transform transition ease duration-300 hover:scale-110"
+              >
+                <Link to={link.link} className={`${location.pathname === link.link ? "border-b-1 pb-3  border-blue-500" : '' }`}>{link.title}</Link>
+              </li>
+            ))}
             </ul>
           </div>
           {/*  hamburger button */}
@@ -133,6 +102,7 @@ const Navbar = () => {
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-7 py-2 rounded-md text-base font-medium transform transition ease duration-300 hover:scale-110"
               >
                 <Link to={link.link}>{link.title}</Link>
+
               </li>
             ))}
           </ul>

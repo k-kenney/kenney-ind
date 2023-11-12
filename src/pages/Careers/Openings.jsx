@@ -1,7 +1,7 @@
 // import { OpeningsData } from "./OpeningsData";
 
 import { Link } from "react-router-dom";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/NavBar/Navbar";
 import { useParams } from "react-router-dom";
 import { OpeningsData } from "../../utils/OpeningsData";
 
