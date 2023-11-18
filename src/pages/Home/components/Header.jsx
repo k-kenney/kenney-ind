@@ -12,7 +12,7 @@ const Header = () => {
           className="w-full h-full object-cover object-left top-0 left-0 z-0 color-red"
         />
       </div>
-      <div className="absolute m-auto top-0 bottom-0 right-0 left-0 z-10">
+      <div className="absolute m-auto top-0 bottom-0 right-0 left-0 md: z-50">
         <Navbar />
       </div>
       <div className="container">
