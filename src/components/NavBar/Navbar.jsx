@@ -1,68 +1,3 @@
-// import React, { useState } from "react";
-// import Logo from "../../assets/img/kenneyLogo.svg";
-// import { Link } from "react-router-dom";
-// import NavLinks from "./NavLinks";
-// import { links } from "./MyLinks";
-
-// const Navbar = () => {
-//   const [open, setOpen] = useState(false);
-//   return (
-//     <nav className="bg-white">
-//       <div className="flex items-center font-medium justify-around">
-//         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
-//           <a href="/" className="">
-//             {" "}
-//             <img
-//               className="w-40 md:w-40 lg:w-56 transform transition ease duration-300 hover:scale-110"
-//               src={Logo}
-//               alt="Kenney logo"
-//             />
-//           </a>
-//           <div
-//             className="text-3xl md:hidden text-black"
-//             onClick={() => setOpen(!open)}
-//           >
-//             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
-//           </div>
-//         </div>
-//         <ul className="md:flex w-full hidden uppercase items-center gap-8 font[Poppins] text-black">
-//           <li className="flex">
-//             <Link to="/" className="py-7 px-3 block w-24 text-center">
-//               Home
-//             </Link>
-//             <Link to="/services" className="py-7 px-3 block w-24 text-center">
-//               Services
-//             </Link>
-//             <Link to="/quote" className="py-7 px-3 inline-block w-24 text-center">
-//               Quote
-//             </Link>
-//           </li>
-//           <NavLinks links={links} />
-//         </ul>
-//         <div className="md:block hidden"></div>
-//         {/* mobile */}
-//         <ul
-//           className={`
-//         md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${
-//           open ? "right-0" : "right-[100%]"
-//         }
-//         `}
-//         >
-//           <li>
-//             <Link to="/about" className="py-7 px-3 inline-block">
-//               Home
-//             </Link>
-//           </li>
-//           <NavLinks />
-//           <div className="py-5"></div>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
@@ -95,12 +30,13 @@ const navLinks = [
   },
 ];
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const location = useLocation();
+const Navbar = ({open, setOpen}) => {
+
+  // const location = useLocation();
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
+    
     console.log(open);
   };
 

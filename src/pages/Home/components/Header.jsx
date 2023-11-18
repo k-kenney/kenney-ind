@@ -1,8 +1,11 @@
+import { useState } from "react";
 import heroImage from "../../../assets/img/dallasBridge.png";
 import Navbar from "../../../components/NavBar/Navbar";
 import HomepageButtons from "./HomepageButtons";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="h-screen lg:h-4/5">
       <div className="relative w-full h-full object-left top-0 left-0">
@@ -13,7 +16,7 @@ const Header = () => {
         />
       </div>
       <div className="absolute m-auto top-0 bottom-0 right-0 left-0 md: z-50">
-        <Navbar />
+        <Navbar open={open} setOpen={setOpen} />
       </div>
       <div className="container">
         <div className="absolute z-0 h-52 m-auto top-0 bottom-0 right-0 left-0 flex items-center justify-center mx-auto">
@@ -24,7 +27,7 @@ const Header = () => {
           </h1>
         </div>
         <div>
-          <HomepageButtons />
+          <HomepageButtons mobileMenu={open} />
         </div>
       </div>
     </div>

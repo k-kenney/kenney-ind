@@ -9,6 +9,7 @@ import ImageSlider from "../../components/ImageSlider";
 import { SliderData } from "../../utils/SliderData";
 import ContactTitle from "../../components/ContactTitle";
 import Quality from "./components/Quality";
+import "../../assets/css/homepage.css";
 
 const Home = () => {
   return (
