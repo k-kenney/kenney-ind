@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa6";
 import qualityPDF from "../../../src/assets/img/quality.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const CareerDropDown = () => {
   const location = useLocation();
@@ -41,14 +41,14 @@ const CareerDropDown = () => {
       {/* Drop Down Code for Career Us */}
       {showCareerDropdown && (
         <div
-          className="absolute md:top-10 md:left-0 md:w-[137px] md:hover:bg-red/70 md:px-8 md:pt-8 md:pb-4 rounded-md text-base font-medium transform transition ease duration-500
+          className="absolute md:top-10 md:left-0 md:w-[137px] md:hover:bg-red/70 md:px-8 md:pt-8 md:pb-4 rounded-md text-base font-medium transform transition ease duration-150
          top-0 left-105 pt-11 pb-2 pl-5 mt-3 md:mt-0 w-full"
           // onMouseLeave={hideDropDownHandle}
         >
-          <a href={qualityPDF} className="block text-gray hover:text-white">
+          <Link to={qualityPDF} className="block text-gray hover:text-white">
             Job
             {/* <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> */}
-          </a>
+          </Link>
         </div>
       )}
       </div>

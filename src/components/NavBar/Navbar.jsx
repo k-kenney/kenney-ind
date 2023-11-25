@@ -37,7 +37,7 @@ const Navbar = ({open, setOpen}) => {
   const handleMenu = () => {
     setOpen((prev) => !prev);
     
-    console.log(open);
+    console.log("Menu clicked. Open:", !open);
   };
 
   return (
@@ -45,13 +45,13 @@ const Navbar = ({open, setOpen}) => {
       <div className="mx-auto py-14 px-5 lg:px-8 w-5/6 ">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="">
+            <Link to="/" className="">
               <img
                 className="w-40 md:w-40 lg:w-56 transform transition ease duration-300 hover:scale-110"
                 src={kenneyLogo}
                 alt="Kenney logo"
               />
-            </a>
+            </Link>
           </div>
           {/* navlinks */}
           <div className="hidden md:block">
@@ -80,7 +80,7 @@ const Navbar = ({open, setOpen}) => {
             <button
               type="button"
               onClick={handleMenu}
-              className="inline-flex item-center justify-center p-2 rounded-md transition duration-300 ease-in text-gray-400 hover:text-white"
+              className="inline-flex items-center justify-center p-2 rounded-md transition duration-300 ease-in text-gray-400 hover:text-white"
             >
               <span className="sr-only ">Open Main Menu</span>
 
@@ -99,7 +99,7 @@ const Navbar = ({open, setOpen}) => {
           <ul
             className={`
         md:hidden bg-blue absolute w-full h-full bottom-0 py-32 duration-500 ${
-          open ? "right-0" : "right-[100%]"
+          open ? "right-0" : "right-full"
         }
         `}
           >

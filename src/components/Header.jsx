@@ -1,7 +1,11 @@
 import triangle from "../assets/img/triangle.png";
 import Navbar from "./NavBar/Navbar";
+import React, { useState } from 'react';
 
 const Header = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="w-full mb-0 relative">
       <div className="bg-right float-right bg-no-repeat m-auto w-1/2 md:w-1/3">
@@ -12,7 +16,7 @@ const Header = () => {
         />
       </div>
       <div className="absolute m-auto top-0 bottom-0 right-0 left-0 z-50">
-        <Navbar />
+        <Navbar open={open} setOpen={setOpen} />
       </div>
     </div>
   );
