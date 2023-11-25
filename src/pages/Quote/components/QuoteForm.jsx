@@ -34,30 +34,54 @@ const QuoteForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
-      // Submit the form to Netlify
+      // Create a new FormData object
+      const formData = new FormData();
+      formData.append("form-name", "quote-form");
+      formData.append("company", company);
+      formData.append("file", file);
+      formData.append("name", name);
+      formData.append("number", number);
+      formData.append("email", email);
+      formData.append("message", message);
+  
+      // Submit the form to Netlify using FormData
       await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-          "form-name": "quote-form",
-          company,
-          file,
-          name,
-          number,
-          email,
-          message,
-        }).toString(),
+        body: formData,
       });
+  
       // After a successful submission, navigate to the success page
       navigate("/success");
     } catch (error) {
       console.error("Form submission error:", error);
     }
   };
+//     try {
+        
+//       // Submit the form to Netlify
+//       await fetch("/", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/x-www-form-urlencoded",
+//         },
+//         body: new URLSearchParams({
+//           "form-name": "quote-form",
+//           company,
+//           file,
+//           name,
+//           number,
+//           email,
+//           message,
+//         }).toString(),
+//       });
+//       // After a successful submission, navigate to the success page
+//       navigate("/success");
+//     } catch (error) {
+//       console.error("Form submission error:", error);
+//     }
+//   };
 
   useEffect(() => {
     const handleResize = () => {
