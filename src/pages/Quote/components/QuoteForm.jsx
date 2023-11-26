@@ -133,7 +133,7 @@ const QuoteForm = () => {
                       id="file"
                       type="file"
                       value={file}
-                      onChange={(e) => setFile(e.target.value)}
+                      onChange={(e) => setFile(e.target.files[0])}
                     />
                   </div>
                 </div>
