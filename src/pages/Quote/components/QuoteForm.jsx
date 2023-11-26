@@ -3,12 +3,14 @@ import { useNavigate } from "react-router";
 
 const QuoteForm = () => {
   const [company, setCompany] = useState("");
-  const [file, setFile] = useState("");
+  const [file, setFile] = useState(null);
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [rows, setRows] = useState(10); // Default number of rows
+
+  
 
   const navigate = useNavigate();
 

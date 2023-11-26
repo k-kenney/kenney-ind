@@ -29,12 +29,12 @@
     </form>
 
     <div id="root"></div>
-    <form name="quote-form" data-netlify="true" netlify netlify-honeypot="bot-field" action="/" hidden>
+    <form name="quote-form" data-netlify="true" netlify netlify-honeypot="bot-field" action="/" enctype="multipart/form-data"  hidden>
       <div>
         <input type="text" name="company" id="company">
       </div>
       <div>
-        <input type="file" name="file" id="file">
+        <input type="file" name="file" id="file" >
       </div>
       <div>
         <input type="text" id="name" name="name" value="contact">
@@ -49,6 +49,7 @@
         <textarea name="message" id="message"></textarea>
       </div>
     </form>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXXdJ7T7U41y2mr2p9rZb3mLEOQIqCJEY&libraries=places"></script>
 
     <script type="module" src="/src/main.jsx"></script>
