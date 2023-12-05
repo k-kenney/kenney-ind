@@ -10,8 +10,6 @@ const QuoteForm = () => {
   const [message, setMessage] = useState("");
   const [rows, setRows] = useState(10); // Default number of rows
 
-  
-
   const navigate = useNavigate();
 
   // Function to format the phone number
