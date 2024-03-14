@@ -3,9 +3,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenets
-import Home from "./pages/Home/Index";
+import Home from './pages/Home/Index';
 import About from './pages/About/Index';
-import Services from "./pages/Services/Index";
+import Services from './pages/Services/Index';
 import Quote from './pages/Quote/Index';
 import Careers from './pages/Careers/Index';
 import Contact from './pages/Contact/Index';
