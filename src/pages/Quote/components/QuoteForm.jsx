@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const App = () => {
+const QuoteForm = () => {
   const [name, setName] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
   return (
-    <div className="App">
+    <div className="QuoteForm">
       <form>
         <input
           type="text"
@@ -21,6 +21,8 @@ const App = () => {
     </div>
   );
 };
+
+export default QuoteForm;
 
 
 // import { useState, useEffect } from "react";

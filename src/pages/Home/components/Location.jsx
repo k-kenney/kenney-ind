@@ -11,6 +11,7 @@ function GoogleMap() {
       zoom: 14, // Default zoom level
     });
 
+    // AIzaSyAD-dLA5Nde2AOfvOObAzV_lYFSQFzGXiE
 
     // Add a marker to the map
     new window.google.maps.Marker({

@@ -8,7 +8,7 @@ import About from './pages/About/Index';
 import Services from "./pages/Services/Index";
 import Quote from './pages/Quote/Index';
 import Careers from './pages/Careers/Index';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Index';
 import Openings from './pages/Careers/Openings';
 import SuccessMessage from './components/SuccessMessage';
 
