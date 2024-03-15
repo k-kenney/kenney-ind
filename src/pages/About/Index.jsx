@@ -1,4 +1,4 @@
-import ContactForm from "../../components/ContactForm";
+import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
@@ -15,7 +15,7 @@ const About = () => {
           <AboutHeader />
           <Timeline />
           <ContactTitle />
-          <ContactForm />
+          <ContactSection />
           <Footer />
         </div>
       </Fade>

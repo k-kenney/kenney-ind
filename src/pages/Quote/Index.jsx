@@ -1,10 +1,10 @@
-// import ContactForm from "../../components/ContactForm";
+import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { Fade } from "react-awesome-reveal";
 import QuoteHeader from "./components/QuoteHeader";
 import QuoteTitle from "./components/QuoteTitle";
-import QuoteForm from "./components/QuoteForm";
+// import QuoteForm from "./components/QuoteForm";
 
 
 const Quote = () => {
@@ -15,8 +15,8 @@ const Quote = () => {
         <Header />
         <QuoteHeader />
         <QuoteTitle />
-        <QuoteForm />
-        {/* <ContactForm /> */}
+        {/* <QuoteForm /> */}
+        <ContactSection />
         <Footer />
       </div>
     </Fade>

@@ -4,7 +4,7 @@ import HomepageAbout from "./components/HomepageAbout";
 import HomepageCards from "./components/HomepageCards";
 import GoogleMap from "./components/Location";
 import Footer from "../../components/Footer";
-import ContactForm from "../../components/ContactForm";
+import ContactSection from "../../components/ContactSection";
 import ImageSlider from "../../components/ImageSlider";
 import { SliderData } from "../../utils/SliderData";
 import ContactTitle from "../../components/ContactTitle";
@@ -22,7 +22,7 @@ const Home = () => {
         <ImageSlider slides={SliderData} />
         <GoogleMap />
         <ContactTitle />
-        <ContactForm />
+        <ContactSection />
         <Footer />
       </Fade>
     </>
