@@ -43,8 +43,8 @@ const Footer = () => {
             <h3 className="text-lg font-bold pb-4">Email</h3>
             <p className="pb-10">sales@kenneyind.com</p>
             <h3 className="text-lg font-bold pb-4">Call us</h3>
-            <p>t: (972) 000-0000</p>
-            <p className="pb-10">t: (972) 000-0000</p>
+            <p>t: (214) 421-4175 </p>
+            {/* <p className="pb-10">t: (972) 000-0000</p> */}
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
       <div className="w-full bg-red">
         <p className="text-copyright text-center m-auto pb-8 font-special text-sm lg:text-lg tracking-wider">
-          Copyright &copy; 2023 KenneyIND. All rights reserved.{" "}
+          Copyright &copy; 2024 KenneyIND. All rights reserved.{" "}
         </p>
       </div>
       {/* <Copyright /> */}
